@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import Swal from 'sweetalert2'
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -53,7 +54,14 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
+                        // href={url || ''}
+                        onClick={() => { url ? (window.open(url)) :
+                          (Swal.fire({
+                            icon: 'warning',
+                            title: 'site under development',
+                            text: 'will be live soon',
+                          }))
+                        }}
                       >
                         See Live
                       </a>
@@ -65,7 +73,7 @@ const Projects = () => {
                           className="cta-btn text-color-main"
                           href={repo}
                         >
-                          Source Code
+                          Source Code frontend
                         </a>
                       )}
                     </div>
@@ -81,7 +89,7 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__image">
                       <a
-                        href={url || '#!'}
+                        
                         target="_blank"
                         aria-label="Project Link"
                         rel="noopener noreferrer"
