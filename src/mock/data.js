@@ -1,4 +1,5 @@
 import { nanoid } from 'nanoid';
+import cvPdf from '../images/BorisBrunoCV.pdf';
 
 // HEAD DATA
 export const headData = {
@@ -10,8 +11,8 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: '',
-  name: '',
-  subtitle: '',
+  name: 'Boris',
+  subtitle: 'Im a Fullstack Web Developer',
   cta: '',
 };
 
@@ -21,7 +22,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: cvPdf, // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
