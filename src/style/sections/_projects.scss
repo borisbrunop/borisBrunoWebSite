@@ -9,6 +9,10 @@
     padding-top: 5rem;
   }
 
+  .pointer{
+    cursor: pointer;
+  }
+
   .project-wrapper {
     margin-bottom: 15rem;
 
@@ -25,7 +29,7 @@
     }
 
     &__text {
-      text-align: left;
+      text-align: center;
 
       @include respond(phone) {
         margin-bottom: 2.5rem !important;
@@ -50,8 +54,8 @@
     }
 
     &__image {
-      width: 90%;
-      margin: 0 auto;
+      width: 70%;
+      margin:  auto;
 
       @include respond(tab-land) {
         width: 100%;

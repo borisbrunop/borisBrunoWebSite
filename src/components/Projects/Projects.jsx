@@ -29,11 +29,11 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, repoB, img, id } = project;
 
             return (
               <Row key={id}>
-                <Col lg={4} sm={12}>
+                <Col lg={3} sm={6}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -41,8 +41,8 @@ const Projects = () => {
                     delay={500}
                     distance="30px"
                   >
-                    <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                    <div className="project-wrapper__text">
                       <div>
                         <p>
                           {info ||
@@ -65,7 +65,17 @@ const Projects = () => {
                       >
                         See Live
                       </a>
-
+                    </div>
+                    </Fade>
+                </Col>
+                {/* <Col lg={3} sm={6}>
+                  <Fade left={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={500}
+                    distance="30px"
+                  >
+                    <div className="project-wrapper__text">
                       {repo && (
                         <a
                           target="_blank"
@@ -73,13 +83,23 @@ const Projects = () => {
                           className="cta-btn text-color-main"
                           href={repo}
                         >
-                          Source Code frontend
+                          Source Code Frontend
+                        </a>
+                      )}
+                      {repo && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn text-color-main"
+                          href={repo}
+                        >
+                          Source Code Backend
                         </a>
                       )}
                     </div>
                   </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
+                </Col> */}
+                <Col lg={6} sm={8}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -112,6 +132,37 @@ const Projects = () => {
                           </div>
                         </Tilt>
                       </a>
+                    </div>
+                  </Fade>
+                </Col>
+                <Col lg={3} sm={6}>
+                  <Fade left={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={500}
+                    distance="30px"
+                  >
+                    <div className="project-wrapper__text">
+                      {repo && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn pointer text-color-main"
+                          href={repo}
+                        >
+                          Source Code Frontend
+                        </a>
+                      )}
+                      {repoB && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn pointer text-color-main"
+                          href={repoB}
+                        >
+                          Source Code Backend
+                        </a>
+                      )}
                     </div>
                   </Fade>
                 </Col>
