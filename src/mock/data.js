@@ -47,6 +47,16 @@ export const projectsData = [
     repo: 'https://github.com/ivanotello/project-ludotopia-frontend/tree/develop', // if no repo, the button will not show up
     repoB: 'https://github.com/ivanotello/project-ludotopia-backend/tree/develop',
   },
+  {
+    id: nanoid(),
+    img: 'bestdoc.png',
+    title: 'BestDoc',
+    info: 'Currently working on the develop of this new webapp for doctors, patients and clinics.',
+    info2: 'Here you will be able to set an appointment, search for doctors, pay, receive results of appointments and much more, take a look of the progress on the button see live',
+    url: 'https://bestdoc-front.herokuapp.com/',
+    repo: 'https://github.com/brackets-it/bestdoc-front', // if no repo, the button will not show up
+    repoB: '',
+  },
 ];
 
 // CONTACT DATA
