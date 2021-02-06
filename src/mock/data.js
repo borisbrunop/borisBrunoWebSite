@@ -57,6 +57,16 @@ export const projectsData = [
     repo: 'https://github.com/brackets-it/bestdoc-front', // if no repo, the button will not show up
     repoB: '',
   },
+  {
+    id: nanoid(),
+    img: 'malalaulart.PNG',
+    title: 'Malalaulart',
+    info: 'This website is from an illustration artist that transforms whatever photo you sent her into an illustration.',
+    info2: 'The principal concept is a page with a form that if you fill it it will immediately show you the cost of what you want and finally it sends the info to his whatsApp number, additionally I made her a homepage with a gallery of his illustrations',
+    url: 'https://malalaulart.netlify.app/',
+    repo: 'https://github.com/borisbrunop/malalaulart', // if no repo, the button will not show up
+    repoB: '',
+  },
 ];
 
 // CONTACT DATA
