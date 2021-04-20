@@ -68,37 +68,6 @@ const Projects = () => {
                     </div>
                     </Fade>
                 </Col>
-                {/* <Col lg={3} sm={6}>
-                  <Fade left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text">
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code Frontend
-                        </a>
-                      )}
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code Backend
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col> */}
                 <Col lg={6} sm={8}>
                   <Fade
                     right={isDesktop}

@@ -35,7 +35,7 @@ export const projectsData = [
     info2: '',
     url: '',
     repo: 'https://github.com/borisbrunop/cormineco-frontend', // if no repo, the button will not show up
-    repoB: '',
+    repoB: 'https://github.com/borisbrunop/cormineco-backend',
   },
   {
     id: nanoid(),
