@@ -30,6 +30,7 @@ const Projects = () => {
           <Title title="Projects" />
           {projects.map((project) => {
             const { title, info, info2, url, repo, repoB, img, id } = project;
+            console.log(url)
 
             return (
               <Row key={id}>
@@ -50,21 +51,25 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
+                      {url != 'https://none.com' ? (
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
                         // href={url || ''}
-                        onClick={() => { url ? (window.open(url)) :
-                          (Swal.fire({
-                            icon: 'warning',
-                            title: 'site under development',
-                            text: 'will be live soon',
-                          }))
+                        onClick={() => { url === 'https://development.com' ? 
+                        (Swal.fire({
+                          icon: 'warning',
+                          title: 'site under development',
+                          text: 'will be live soon',
+                        }))
+                        :
+                        (window.open(url)) 
                         }}
                       >
                         See Live
                       </a>
+                      ):''}
                     </div>
                     </Fade>
                 </Col>

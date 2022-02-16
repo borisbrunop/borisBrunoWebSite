@@ -29,11 +29,21 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'phinxlab.jpg',
+    title: 'Phinlab',
+    info: 'Is a well known software company from Argentina where i worked for nearly one year as a fullstack web developer',
+    info2: 'Node JS, PostgresQL, Typescript, React, Retool were the tools that i worked with. Manage several ecommerce as well as an administration app for those ecommerce and many other marketplaces currently based in Argentina where we can send reports, monitor orders, edit pishical aspects of the ecommerces, import orders from other marketplaces, manege the emails templates and when we sent them, etc. This are some of the challenges that i overcame in my daily life.',
+    url: 'https://none.com',
+    repo: '', // if no repo, the button will not show up
+    repoB: '',
+  },
+  {
+    id: nanoid(),
     img: 'CORMINECO.png',
     title: 'Cormineco website',
     info: 'the main page of a minning company well know in Venezuela ',
     info2: '',
-    url: '',
+    url: 'https://development.com',
     repo: 'https://github.com/borisbrunop/cormineco-frontend', // if no repo, the button will not show up
     repoB: 'https://github.com/borisbrunop/cormineco-backend',
   },
@@ -43,7 +53,7 @@ export const projectsData = [
     title: 'Ludotopy',
     info: 'this is a webapp develop for you to bet with your friends, the next red social for bets',
     info2: '',
-    url: '',
+    url: 'https://development.com',
     repo: 'https://github.com/ivanotello/project-ludotopia-frontend/tree/develop', // if no repo, the button will not show up
     repoB: 'https://github.com/ivanotello/project-ludotopia-backend/tree/develop',
   },
@@ -51,7 +61,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'bestdoc.png',
     title: 'BestDoc',
-    info: 'Currently working on the develop of this new webapp for doctors, patients and clinics.',
+    info: 'Worked on the develop of this new webapp for doctors, patients and clinics.',
     info2: 'Here you will be able to set an appointment, search for doctors, pay, receive results of appointments and much more, take a look of the progress on the button see live',
     url: 'https://bestdoc-front.herokuapp.com/',
     repo: 'https://github.com/brackets-it/bestdoc-front', // if no repo, the button will not show up
@@ -61,12 +71,12 @@ export const projectsData = [
     id: nanoid(),
     img: 'malalaulart.PNG',
     title: 'Malalaulart',
-    info: 'This website is from an illustration artist that transforms whatever photo you sent her into an illustration.',
-    info2: 'The principal concept is a page with a form that if you fill it it will immediately show you the cost of what you want and finally it sends the info to his whatsApp number, additionally I made her a homepage with a gallery of his illustrations',
+    info: 'Web app from an illustration artist that transforms whatever photo you sent her into an illustration.',
+    info2: 'The principal concept is a page with a form that immediately show you the cost of what you want and finally it sends the info to his whatsApp number, additionally I made her a homepage with a gallery of his illustrations',
     url: 'https://malalaulart.netlify.app/',
     repo: 'https://github.com/borisbrunop/malalaulart', // if no repo, the button will not show up
     repoB: '',
-  },
+  }
 ];
 
 // CONTACT DATA
